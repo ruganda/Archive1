@@ -1,0 +1,49 @@
+
+
+
+body{
+    font: 15px Arial, Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+    background-color:#f4f4f4;
+  }
+/* Header **/
+header{
+    background:#35424a;
+    color:#ffffff;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom:#0dad85 3px solid;
+    padding-left:20px;
+
+
+  }
+  header a{
+    color:#ffffff;
+    text-decoration:none;
+    font-size:16px;
+  }
+  
+  header li{
+    display:inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  header #branding{
+    float:left;
+  }
+  
+  header #branding h1{
+    margin:0;
+  }
+  
+  header nav{
+    float:right;
+    margin-top:10px;
+  }
+  
+  header .highlight, header .current a{
+    color:#0dad85;
+    font-weight:bold;
+  }
+  
