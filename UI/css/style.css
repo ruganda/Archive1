@@ -1,0 +1,153 @@
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+    background-color:#f4f4f4;
+    background:url('../images/bg2.jpg') 
+  }
+  
+  /* Global */
+  .container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+  }
+  
+  ul{
+    margin:0;
+    padding:0;
+  }
+  
+
+  /* Header **/
+  header{
+    background:#35424a;
+    color:#ffffff;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom:#05613e 3px solid;
+  }
+  header a{
+    color:#ffffff;
+    text-decoration:none;
+    font-size:16px;
+  }
+  
+  header li{
+    display:inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  header #branding{
+    float:left;
+  }
+  
+  header #branding h1{
+    margin:0;
+  }
+  
+  header nav{
+    float:right;
+    margin-top:10px;
+  }
+  
+  header .highlight, header .current a{
+    color:#05613e;
+    font-weight:bold;
+  }
+  
+  header a:hover{
+    color:#cccccc;
+    font-weight:bold;
+  }
+  
+
+  /* forms */
+.form-box{
+  width: 400px;
+  height: 420px;
+  background: #35424a;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding-bottom: 100px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+
+}
+.form-box p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.form-box input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.form-box input[type="text"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.form-box input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #0c7a59;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.form-box input[type="submit"]:hover
+{
+  cursor: pointer;
+ 
+  
+}
+
+.form-box a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+
+
+.form-box p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.form-box input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.form-box input[type="text"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.form-box input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #39dc79;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
