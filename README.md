@@ -7,10 +7,10 @@ Maintenance Tracker App is an application that provides users with the ability t
 https://github.com/ruganda/Maintenance_tracker.git
 
 # Project Link
-https://ruganda.github.io/Maintenance_tracker/UI/home.html
+https://ruganda.github.io/Maintenance_tracker/UI/index.html
 #To access the UI admin panel.
- login email : admin@repairs.com
- password : use any password
+ - https://ruganda.github.io/Maintenance_tracker/UI/admin.html
+ 
 
 
 
@@ -25,14 +25,14 @@ https://ruganda.github.io/Maintenance_tracker/UI/home.html
  - The user can view all his/her requests
 
 # HOME PAGE
-![alt text](https://raw.githubusercontent.com/ruganda/Maintenence_tracker/gh-pages/UI/images/index.PNG)
+![alt text](https://raw.githubusercontent.com/ruganda/Maintenance_tracker/gh-pages/UI/images/index.PNG)
 
 # USER REGISTRATION
-![alt text](https://raw.githubusercontent.com/ruganda/Maintenence_tracker/gh-pages/UI/images/sign_up.PNG)
+![alt text](https://raw.githubusercontent.com/ruganda/Maintenance_tracker/gh-pages/UI/images/sign_up.PNG)
 # LOGIN
-![alt text](https://raw.githubusercontent.com/ruganda/Maintenence_tracker/gh-pages/UI/images/login.PNG)
+![alt text](https://raw.githubusercontent.com/ruganda/Maintenance_tracker/gh-pages/UI/images/login.PNG)
 # ADMIN DASHBOARD
-![alt text](https://raw.githubusercontent.com/ruganda/Maintenence_tracker/gh-pages/UI/images/admin.PNG)
+![alt text](https://raw.githubusercontent.com/ruganda/Maintenance_tracker/gh-pages/UI/images/admin.PNG)
 
 
 
