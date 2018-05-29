@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>M-TRACKER</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1 class="highlight">
+                    M-TRACKER
+                </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+
+                    <li class="current">
+                        <a href="user_requests.html">MY DASHBOARD</a>
+                    </li>
+                    <li>
+                        <a href="index.html">LOGOUT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="row">
+            <h2 class="section-heading">All Requests</h2>
+            
+        </div>
+        <div class="row filter">
+            <div class="col">
+                <select name="filter" id="filter">
+                    <option value="new">Filter by...</option>
+                    <option value="new">New</option>
+                    <option value="new">Pending</option>
+                    <option value="new">Rejected</option>
+                    <option value="new">Resolved</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="requests-list">
+                <li class="resolved">
+                    <div class="request-item" href="#">
+                        <p>#123</p>
+                        <p>Repairs</p>
+                        <p>Laptop</p>
+                        <p class="status-resolved">Resolved</p>
+                    </div>
+                </li>
+                <li class="pending">
+                    <div class="request-item" href="#">
+                        <p>#124</p>
+                        <p>Repairs</p>
+                        <p>Monitor</p>
+                        <p class="status-pending">Pending</p>
+                    </div>
+                </li>
+                <li class="rejected">
+                    <div class="request-item" href="#">
+                        <p>#124</p>
+                        <p>Repairs</p>
+                        <p>Monitor</p>
+                        <p class="status-rejected">Rejected</p>
+                    </div>
+                </li>
+                <li class="new-request">
+                    <div class="request-item" href="#">
+                        <p>#124</p>
+                        <p>Maintenance</p>
+                        <p>Photocopier</p>
+                        <p class="status-new">new</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
