@@ -31,6 +31,60 @@
             </nav>
         </div>
     </header>
-    
+    <section>
+        <div class="row">
+            <h2 class="section-heading">All Requests</h2>
+        </div>
+        <div class="row filter">
+            <div class="col">
+                <select name="filter" id="filter">
+                    <option value="new">Filter by...</option>
+                    <option value="new">New</option>
+                    <option value="new">Pending</option>
+                    <option value="new">Rejected</option>
+                    <option value="new">Resolved</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="requests-list">
+                <li class="resolved">
+                    <a class="request-item" href="admin-request-details.html">
+                        <p>#123</p>
+                        <p>Repairs</p>
+                        <p>Laptop</p>
+                        <p class="status-resolved">Resolved</p>
+                    </a>
+                </li>
+                <li class="pending">
+                    <a class="request-item" href="admin-request-details.html">
+                        <p>#124</p>
+                        <p>Repairs</p>
+                        <p>Monitor</p>
+                        <p class="status-pending">Pending</p>
+                    </a>
+                </li>
+                <li class="rejected">
+                    <a class="request-item" href="admin-request-details.html">
+                        <p>#124</p>
+                        <p>Repairs</p>
+                        <p>Monitor</p>
+                        <p class="status-rejected">Rejected</p>
+                    </a>
+                </li>
+                <li class="new-request">
+                    <a class="request-item" href="admin-request-details.html">
+                        <p>#124</p>
+                        <p>Maintenance</p>
+                        <p>Photocopier</p>
+                        <p class="status-new">new</p>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
 </body>
+
 </html>
