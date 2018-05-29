@@ -22,7 +22,7 @@ ul{
 
 /* Header **/
 header{
-  background:#35424a;
+  background:black;
   color:#ffffff;
   padding-top:30px;
   min-height:70px;
@@ -280,10 +280,19 @@ width: 250px;
   position: relative;
   overflow: hidden;
   outline: none;
+ 
 }
 .btn-pri {
   border: 2px solid #4CAF50;
   background-color: #4CAF50;
   color: #FFFFFF;
+  
 
+}
+.row{
+  margin: 0 auto;
+  
+}
+.button-center{
+  text-align: center;
 }
