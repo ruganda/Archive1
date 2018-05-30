@@ -23,7 +23,7 @@ class UserTests(unittest.TestCase):
     
     def test_user_login(self):
         """Test if a user with valid details can login"""
-        self.user.register(" Mubarak ruganda", "rugand", "password")
+        self.user.register(" Mubarak ruganda", "ruganda", "password")
         res = self.user.login("ruganda", "password")
         self.assertEqual(res, "Login successful")
     
@@ -31,10 +31,10 @@ class UserTests(unittest.TestCase):
         """Test for a login attempt with a wrong password"""
         self.user.register("Mubarak ruganda", "ruganda", "654123", )
         res = self.user.login("ruganda", "password")
-        self.assertEqual(res, "wrong password")
+        self.assertEqual(res, 'invalid username or password')
     
     def test_non_existing_user_login(self):
         """Test if a non-existing user can login"""
-        self.user.register(" Mubarak ruganda", "ruganda@mail", "654123")
         res = self.user.login("Kapere", "654123")
         self.assertEqual(res, "user does not exist")
+    
