@@ -32,3 +32,9 @@ class UserTests(unittest.TestCase):
         self.user.register("Mubarak ruganda", "ruganda", "654123", )
         res = self.user.login("ruganda", "password")
         self.assertEqual(res, "wrong password")
+    
+    def test_non_existing_user_login(self):
+        """Test if a non-existing user can login"""
+        self.user.register(" Mubarak ruganda", "ruganda@mail", "654123")
+        res = self.user.login("Kapere", "654123")
+        self.assertEqual(res, "user does not exist")
