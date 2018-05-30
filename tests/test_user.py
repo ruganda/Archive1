@@ -5,3 +5,8 @@ from app.models.user import User
 
 class UserTests(unittest.TestCase):
     """Define and setup testing class"""
+
+    def setUp(self):
+            """ Set up user object before each test"""
+            self.user = User()
+
