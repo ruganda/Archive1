@@ -11,7 +11,7 @@ class User(object):
 
         try:
             # set up a payload with an expiration time
-            payload = { 'usernam': username}
+            payload = { 'username': username}
             # create the  string token using the payload and the SECRET key
             jwt_string = jwt.encode(
                 payload,
