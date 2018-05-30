@@ -313,7 +313,7 @@ width: 250px;
 
 
 
-.btn {
+.btnz {
   border-radius: 3px;
   border-style: none;
   padding: 10px 50px;
@@ -325,7 +325,7 @@ width: 250px;
   outline: none;
  
 }
-.btn-pri {
+.btn-primary {
   border: 2px solid #4CAF50;
   background-color: #4CAF50;
   color: #FFFFFF;
@@ -339,3 +339,45 @@ width: 250px;
 .button-center{
   text-align: center;
 }
+
+.btn-approve,
+.btn-reject,
+.btn-resolve {
+  border: none; 
+  font-size: 1.2rem;
+  margin-bottom: 1.6rem;
+  
+}
+
+.btn-approve {
+  background-color: #d1a429;
+}
+
+.btn-approve:hover {
+  background-color: #b48e24;
+  cursor: pointer;
+}
+
+.btn-reject {
+  background-color: #e84118;
+}
+
+.btn-reject:hover {
+  background-color: #bb3615;
+  cursor: pointer;
+}
+
+.btn-resolve {
+  background-color: #44bd32;
+}
+
+.btn-resolve:hover {
+  background-color: #328825;
+  cursor: pointer;
+}
+
+/* .details p {
+  font-size: 1.9rem;
+  font-weight: 400;
+  padding: 1.0rem;
+} */
