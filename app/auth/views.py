@@ -23,5 +23,17 @@ def register():
             response = {
                 'message': str(e)
             }
-            return make_response(jsonify(response)), 500
+            return jsonify(response), 500
+@auth.route("/login/", methods =["POST"])
+def login():
+    if request.method == 'POST':
+        data = request.get_json()
+        username =data["username"]
+        password = data["password"]
+        result = user_instance.login(username,password)
+        if result =='Login successful':
+            # create a  token
+            token = user_instance.generate_token(username)
+            return jsonify({"token":str(token)})
+        return jsonify({"response": result })
 
