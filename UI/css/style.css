@@ -94,9 +94,9 @@ footer{
 
   /* forms */
 .form-box{
-width: 400px;
-height: 420px;
-background: #35424a;
+width: auto;
+height: auto;
+background: black;
 color: #fff;
 top: 50%;
 left: 50%;
@@ -119,7 +119,12 @@ font-weight: bold;
 width: 100%;
 margin-bottom: 20px;
 }
-.form-box input[type="text"], input[type="password"]
+.form-box textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  background: black;
+}
+.form-box input[type="text"], input[type="password"],textarea
 {
 border: none;
 border-bottom: 1px solid #fff;
@@ -304,9 +309,6 @@ width: 250px;
 .section-details{
   margin:auto 25%;
   
-  
-  
-
 }
 
 
