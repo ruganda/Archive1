@@ -26,3 +26,9 @@ class UserTests(unittest.TestCase):
         self.user.register(" Mubarak ruganda", "rugand", "password")
         res = self.user.login("ruganda", "password")
         self.assertEqual(res, "Login successful")
+    
+    def test_wrong_password(self):
+        """Test for a login attempt with a wrong password"""
+        self.user.register("Mubarak ruganda", "ruganda", "654123", )
+        res = self.user.login("ruganda", "password")
+        self.assertEqual(res, "wrong password")
