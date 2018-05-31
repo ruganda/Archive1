@@ -15,18 +15,18 @@ Maintenance Tracker App is an application that provides users with the ability t
 
 # Getting Started
 
-#Backend
+# Backend
 
 -You can clone the project   https://github.com/ruganda/Maintenance_tracker.git
 - Navigate to the project's root directory. 
 - setup a virtual environment and then activate it.
 - Install the project dependencies   $ pip install -r requirements.txt
 
-#To run the project 
+# To run the project 
 - use   $ python run.py
 - navigate to  http://127.0.0.1:5000/api/v1/auth/register/ in postman to test the endpoints
 
-#Frontend
+# Frontend
 
 # Project Link
 https://ruganda.github.io/Maintenance_tracker/UI/index.html
