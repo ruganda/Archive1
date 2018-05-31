@@ -13,16 +13,17 @@ class APITestCase(unittest.TestCase):
         
         self.mock_data = {
             "item":"laptop",
-            'type': 'Maintenance',
+            'request_type': 'Maintenance',
             'category': 'electronics',
-            'description': 'The machine is to slow '
+            'description': 'The machine is to slow ',
+            "status": "new"
         }
         # bind the app context
         with self.app.app_context():
             self.client = self.app.test_client
 
         # create a request
-        self.request = self.client().post('api/v1/request/',
+        self.request = self.client().post('api/v1/Request/',
                                       content_type='application/json',
                                       data=json.dumps(self.mock_data))
 
@@ -30,5 +31,5 @@ class APITestCase(unittest.TestCase):
     
     def test_request_can_be_created(self):
         """test that a user can create a request"""
-        self.assertEqual(self.request.status_code, 200)
+        self.assertEqual(self.request.status_code, 201)
 

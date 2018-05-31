@@ -44,7 +44,7 @@ class AuthTestCase(unittest.TestCase):
     
     def test_login_no_duplicate_uses(self):
         """tests that a unique user is added"""
-
+ 
         response = self.client().post('api/v1/auth/login/',
                                         content_type='application/json',
                                         data=json.dumps({'username': 'ruganda',
