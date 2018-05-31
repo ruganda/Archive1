@@ -1,4 +1,0 @@
-{
-  "tests/test_auth.py": true,
-  "tests/test_user.py": true
-}
