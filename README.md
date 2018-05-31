@@ -5,11 +5,11 @@
  # Maintenance-Tracker
 Maintenance Tracker App is an application that provides users with the ability to reach out to repairs department regarding repair or maintenance requests.
 
-#THE BACKEND TECHNOLOGIES
+# Backend Technologies
 -Python
 -Flask
 
-# FRONTEND TECHNOLOGIES
+# Frontend technologies
 -HTML5
 -CSS
 
