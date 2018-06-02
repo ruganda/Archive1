@@ -14,19 +14,17 @@ class Request(object):
         else:
             return False
 
-    def create_request(self,item, request_type, category, description, status ):
+    def create_request(self,item, request_type, description):
         """A method to create a new request """
-        
         self.data = {}
         if self.existing_request(description, item):
             return "request already exists"
         else:
             self.data['item'] = item
-            self.data['category'] = category
             self.data['request_id'] = uuid.uuid1()
             self.data['type'] = request_type
             self.data['description'] = description
-            self.data["status"] = status
+            self.data["status"] = "new"
             self.requests_list.append(self.data)
             return "Request created"
         return "Request does not exist"
@@ -42,16 +40,13 @@ class Request(object):
                 return request_object
         return False
     
-    def modify_request(self, request_id, title, item, category,request_type, description, status):
+    def modify_request(self, request_id, item, request_type, description, status):
         """ Find a request with the given id and modify its details"""
         
         for request_object in self.requests_list:
             if request_object['request_id'] == request_id:
                 self.requests_list.remove(request_object)             
-                
-                request_object['title'] = title
                 request_object['item'] = item
-                request_object['category'] = category
                 request_object['request_type'] = request_type
                 request_object['description'] = description
                 request_object['status'] = status
