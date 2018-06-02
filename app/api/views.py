@@ -8,16 +8,13 @@ import uuid
 def create_request():
     """A route to handle Requests"""
     if request.method == 'POST':
-        data = request.get_json()
-        item = data["item"]
-        category = data['category']
-        request_type = data['request_type']
-        description = data['description']
-        status = data["status"]
+        request_data = request.get_json()
+        request_type = request_data['request_type']
+        item = request_data["item"]
+        description = request_data['description']
 
         try:
-            result = request_instance.create_request(
-                item, request_type, category, description, status)
+            result = request_instance.create_request(item, request_type, description)
             if result == "Request created":
                 return jsonify(response=result), 201
             else:
@@ -27,7 +24,7 @@ def create_request():
                 'message': str(e)
             }
             return jsonify(response), 500
-    return jsonify(request_instance.fetch_all_requests())
+    return jsonify(request_instance.fetch_all_requests()),200
 
 
 @api.route('/Request/<request_id>', methods=['GET'])
@@ -43,14 +40,11 @@ def modify_request(request_id):
     """A route to handle requests modification"""
     request_id = uuid.UUID(request_id)
     request_data = request.get_json()
-    title = request_data['title']
     item = request_data['item']
     description = request_data['description']
-    category = request_data['category']
     request_type = request_data['request_type']
     status = request_data['status']
-    result = request_instance.modify_request(
-        request_id, title, item, category, request_type, description, status)
+    result = request_instance.modify_request(request_id, item, request_type, description, status)
     if result == "update success":
         return jsonify(response=result), 200
     elif result == "no request with given id":
