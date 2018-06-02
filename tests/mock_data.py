@@ -1,16 +1,16 @@
 
 mock_user1 = {
-    "name":"Muba Ruganda",
+    "name": "Muba Ruganda",
     'username': 'ruganda',
     'password': 'password'
 }
 mock_user1 = {
-    "name":"John Paul",
+    "name": "John Paul",
     'username': 'johnpaul',
     'password': 'password'
 }
-mock_user2= {
-    "name":"Paul Messi",
+mock_user2 = {
+    "name": "Paul Messi",
     'username': 'messi',
     'password': 'password'
 }
@@ -28,17 +28,17 @@ mock_data2 = {
     "item": "Printer",
     'request_type': 'Repair',
     'description': 'The printer is faulty'
-    }
+}
 
 mock_data3 = {
     "item": "Air conditioner",
     'request_type': 'Repair',
     'description': 'The printer is faulty',
-    }
+}
 
 mock_edit = {
-        "item": "monitor",
-        'request_type': 'Repair',
-        'description': 'Has red lines',
-        "status": "pending"
-    }
+    "item": "monitor",
+    'request_type': 'Repair',
+    'description': 'Has red lines',
+    "status": "pending"
+}
