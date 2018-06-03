@@ -23,7 +23,7 @@ class Request(object):
         else:
             self.data['item'] = item
             self.data['request_id'] = uuid.uuid1()
-            self.data['type'] = request_type
+            self.data['request_type'] = request_type
             self.data['description'] = description
             self.data["status"] = "new"
             self.requests_list.append(self.data)
