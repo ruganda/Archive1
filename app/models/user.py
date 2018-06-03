@@ -14,7 +14,7 @@ class User(object):
         user_data = {}
         for user in self.users_list:
             if username == user['username']:
-                return "Username already exists."
+                return "User already exists."
             
         else:
             if len(password) < 6:
