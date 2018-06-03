@@ -19,7 +19,7 @@ class UserTests(unittest.TestCase):
         """Test with an already existing user, try registering a user twice"""
         self.user.register("Mubarak ruganda", "ruganda", "password",)
         res = self.user.register("Mubarak ruganda", "ruganda", "password",)
-        self.assertEqual(res, "Username already exists.")
+        self.assertEqual(res, "User already exists.")
 
     def test_user_login(self):
         """Test if a user with valid details can login"""
