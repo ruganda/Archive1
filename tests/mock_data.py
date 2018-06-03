@@ -4,12 +4,12 @@ mock_user1 = {
     'username': 'ruganda',
     'password': 'password'
 }
-mock_user1 = {
+mock_user2 = {
     "name": "John Paul",
     'username': 'johnpaul',
     'password': 'password'
 }
-mock_user2 = {
+mock_user3 = {
     "name": "Paul Messi",
     'username': 'messi',
     'password': 'password'
