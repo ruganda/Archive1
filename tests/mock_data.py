@@ -9,11 +9,31 @@ mock_user2 = {
     'username': 'johnpaul',
     'password': 'password'
 }
+mock2_login = {
+    'username': 'johnpaul',
+    'password': 'password'
+}
 mock_user3 = {
     "name": "Paul Messi",
     'username': 'messi',
     'password': 'password'
 }
+test_user1 = {
+    "name": "Paul Messi",
+    'username': 'testing',
+    'password': 'password'
+}
+test_login1 ={
+    'username': 'testing',
+    'password': 'password'}
+
+test_user2 = {
+    "name": "Paul test",
+    'username': 'messi_test',
+    'password': 'passwordtest'
+}
+
+
 mock_data = {
     "item": "laptop",
     'request_type': 'Maintenance',
