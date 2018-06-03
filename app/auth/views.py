@@ -3,6 +3,8 @@
 from flask import jsonify, request, session, make_response
 from . import auth
 from ..import user_instance
+import jwt
+import datetime
 
 
 @auth.route('/register/', methods=['POST'])
@@ -36,7 +38,10 @@ def login():
         password = data["password"]
         result = user_instance.login(username, password)
         if result == 'Login successful':
-            # create a  token
-            token = user_instance.generate_token(username)
-            return jsonify({"token": str(token)})
+            # Generate the access token. This will be used as the authorization header
+            token = jwt.encode({'username' : username, 'exp' : datetime.datetime.utcnow() 
+                                + datetime.timedelta(minutes=90)}, 'hard to guess string')
+            return jsonify({'token' : token.decode(),
+                            'message': 'You logged in successfully.' })
+            
         return jsonify({"response": result})
