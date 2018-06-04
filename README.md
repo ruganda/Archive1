@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/ruganda/Maintenance_tracker.svg?branch=develop)](https://travis-ci.org/ruganda/Maintenance_tracker)
-[![Coverage Status](https://coveralls.io/repos/github/ruganda/Maintenance_tracker/badge.svg?branch=develop)](https://coveralls.io/github/ruganda/Maintenance_tracker?branch=develop)
+[![Build Status](https://travis-ci.org/ruganda/Maintenance_tracker.svg?branch=master)](https://travis-ci.org/ruganda/Maintenance_tracker)
+[![Coverage Status](https://coveralls.io/repos/github/ruganda/Maintenance_tracker/badge.svg?branch=master)](https://coveralls.io/github/ruganda/Maintenance_tracker?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/37094fb68a855168c1af/maintainability)](https://codeclimate.com/github/ruganda/Maintenance_tracker/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/37094fb68a855168c1af/test_coverage)](https://codeclimate.com/github/ruganda/Maintenance_tracker/test_coverage)
  # Maintenance-Tracker
