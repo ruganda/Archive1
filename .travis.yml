@@ -4,8 +4,6 @@ python:
 install:
     "pip install -r requirements.txt"
 script:
-    - nosetests
-    - nosetests --with-coverage
-    - coveralls
+    - nosetests --with-coverage --cover-erase --cover-package=app/ && coverage report
 after_success:
     - "coveralls"
