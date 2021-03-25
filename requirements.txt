@@ -31,7 +31,7 @@ pycparser==2.18
 PyJWT==1.6.4
 pylint==1.9.1
 pytest==3.6.0
-PyYAML==3.12
+PyYAML==5.4
 requests==2.18.4
 six==1.11.0
 urllib3==1.22
